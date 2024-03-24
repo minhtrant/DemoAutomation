@@ -1,0 +1,8 @@
+{
+    "userId": 123,
+    "username": "Mike",
+    "dateOfBirth": "1990-02-15T00:00:00Z",
+    "gender": "Other",
+    "subscribedMarketing": false,
+    "hasSetupPreference": false
+}
