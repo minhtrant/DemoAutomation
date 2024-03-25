@@ -31,11 +31,14 @@ Cypress.Commands.add('checkIfEleExists', (elementName) => {
         case 'Successfully email message':
             element = 'p:contains("Thanks for contacting us")';
             break;
+        case 'Name textbox':
+            element = 'input[data-original_id="name"]';
+            break;
         default:
             element = elementName;
             break;
     }
-    cy.wait(1500);
+    // cy.wait(1000);
     if (Cypress.$(element).length) {
         isExist = true;
     }

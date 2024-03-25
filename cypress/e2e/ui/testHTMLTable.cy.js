@@ -9,7 +9,7 @@ describe('Test suite - HTML No ID table', () => {
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/');
     })
 
-    it.only('Verify that the first letter of each word in the title is in upper case excluding the preposition', () => {
+    it('verify that the first letter of each word in the title is in upper case excluding the preposition', () => {
         let preWords = ['a', 'an', 'the', 'and', 'of', 'but', 'ot', 'for', 'nor', 'with', 'on', 'at', 'to', 'from', 'by', 'in'];
         let expectedTitleName = '';
         let observedTitleName = '';
@@ -32,7 +32,7 @@ describe('Test suite - HTML No ID table', () => {
         })
     })
 
-    it('Verify that there is no Manual work', () => {
+    it('verify that there is no Manual work', () => {
         homePage.getListOfRowTable().then(tableRow => {
             for (let index = 1; index < tableRow.length; index++) {
                 cy.wrap(tableRow).eq(index).find('td').eq(1).then(workNameList => {
@@ -45,7 +45,7 @@ describe('Test suite - HTML No ID table', () => {
         })
     })
 
-    it('Verify that all roles have at least $100,000', () => {
+    it('verify that all roles have at least $100,000 as salary', () => {
         homePage.getListOfRowTable().then(tableRow => {
             for (let index = 1; index < tableRow.length; index++) {
                 cy.wrap(tableRow).eq(index).find('td').eq(2).then(salariesList => {

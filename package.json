@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ui-html-table": "cypress run --spec cypress/e2e/ui/testHTMLTable.cy.js",
+    "ui-test": "cypress run --spec cypress/e2e/ui/*.cy.js",
+    "api-test": "cypress run --spec cypress/e2e/api/*.cy.js",
     "allure-clear": "if exist allure-results rmdir /S/Q allure-results",
     "allure-report": "allure generate allure-results --clean -o allure-report",
     "allure-open": "allure open allure-report",
-    "allure-open2": "allure serve allure-results"
+    "allure-serve": "allure serve allure-results"
   },
   "author": "minhtran",
   "license": "ISC",
