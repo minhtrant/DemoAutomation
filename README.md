@@ -1,6 +1,10 @@
 **Cypress Demo Automation Project**
 - This file demonstrates how to run this Cypress project.
 
+**Pre-requisite**
+- Java version 8+
+- NodeJs version 20+
+  
 **How to run**
 - clone this repo
 - install dependencies: npm install
