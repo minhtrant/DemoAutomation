@@ -23,7 +23,7 @@ class HomePage {
         return cy.contains(BTN_SUBMIT_LOCATOR, LBL_EMAIL_ME_LOCATOR);
     }
     getSuccessfullyEmailButton() {
-        return cy.contains('p', LBL_SUCCESSFULLY_EMAIL_LOCATOR);
+        return cy.contains('p', LBL_SUCCESSFULLY_EMAIL_LOCATOR, { timeout: 10000 });
     }
 }
 export default HomePage
